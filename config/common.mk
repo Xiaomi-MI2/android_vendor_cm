@@ -125,21 +125,32 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# Required CM packages
+PRODUCT_PACKAGES += \
+    Development \
+    BluetoothExt \
+    Profiles
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    libemoji
+    VoicePlus \
+    Basic \
+    libemoji \
+    Terminal
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
+    Launcher3 \
     Trebuchet \
+    AudioFX \
+    CMWallpapers \
     CMFileManager \
     Eleven \
     LockClock \
     CMUpdater \
     CMAccount \
     CMHome \
-    CyanogenSetupWizard \
-    CMSettingsProvider
+    CyanogenSetupWizard
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
@@ -159,6 +170,7 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs \
     bash \
+    nano \
     htop \
     powertop \
     lsof \
